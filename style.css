@@ -42,7 +42,7 @@ body.page-contact {
     --theme-primary: #ff6a00;
     --theme-secondary: #ee0979;
     --nav-bg: linear-gradient(90deg, #0c0c0c, #ff6a00);
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("assets/bg_contact.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("bg_contact.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
