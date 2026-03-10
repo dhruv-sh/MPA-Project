@@ -12,7 +12,7 @@ body {
 }
 
 body.page-home {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/1.gif");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("1.gif");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -22,7 +22,7 @@ body.page-about {
     --theme-primary: #00f0ff;
     --theme-secondary: #7000ff;
     --nav-bg: linear-gradient(90deg, #0c0c0c, #00f0ff);
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("assets/bg_about.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("bg_about.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -32,7 +32,7 @@ body.page-projects {
     --theme-primary: #00ffaa;
     --theme-secondary: #0088ff;
     --nav-bg: linear-gradient(90deg, #0c0c0c, #00ffaa);
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/bg_projects.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("bg_projects.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
