@@ -1,0 +1,195 @@
+:root {
+    --theme-primary: #4367fa;
+    --theme-secondary: #7d37fe;
+    --nav-bg: linear-gradient(90deg, #0c0c0c, #0072ff);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body.page-home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/1.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body.page-about {
+    --theme-primary: #00f0ff;
+    --theme-secondary: #7000ff;
+    --nav-bg: linear-gradient(90deg, #0c0c0c, #00f0ff);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("assets/bg_about.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body.page-projects {
+    --theme-primary: #00ffaa;
+    --theme-secondary: #0088ff;
+    --nav-bg: linear-gradient(90deg, #0c0c0c, #00ffaa);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/bg_projects.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body.page-contact {
+    --theme-primary: #ff6a00;
+    --theme-secondary: #ee0979;
+    --nav-bg: linear-gradient(90deg, #0c0c0c, #ff6a00);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("assets/bg_contact.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, var(--theme-secondary), var(--theme-primary));
+    padding: 15px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+nav {
+    background: var(--nav-bg);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(248, 246, 246);
+    padding: 1em 1.5em;
+    display: block;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    border-radius: 6px;
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+}
+
+#content {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgb(10, 38, 44);
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+#content h2 {
+    color: #f8f5f7;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+#content img {
+    width: 350px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border: 4px solid #764ba2;
+    transition: transform 0.4s ease;
+}
+
+#content img:hover {
+    transform: scale(1.05);
+}
+
+form {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #22a82b, #243a20);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #764ba2;
+    outline: none;
+}
+
+form button {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
